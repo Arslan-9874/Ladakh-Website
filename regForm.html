@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ladakh</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="https://kit.fontawesome.com/bf6449385b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Tilt+Prism&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li id="main_heading"><a href="/#mainContainerid">LADAKH</a></li>
+            <div class="menu">
+
+                <li><a href="/#serviceContainer">Services</a></li>
+                <li><a href="/#galleryContainer">Gallery</a></li>
+                <li><a href="/#contactContainer">Contact Us</a></li>
+            </div>
+            <li><a href="/regForm" id="regForm">Registration Form</a></li>
+        </ul>
+    </nav>
+
+    <div class="registrationForm">
+        <form action="/regForm" method="post">
+            <div class="formCard">
+                <div class="regHeading">
+                    <h3>Registration Form</h3>
+                </div>
+                <div class="regDetails">
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" placeholder="Please enter your name" required>
+                    </div>
+
+                    <div>
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" pattern="[0-9]{10}" maxlength="10" name="phone" id="phone" placeholder="Please enter your Phone number" required>
+                    </div>
+
+                    <div>  
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Please enter your email">
+                    </div>
+
+                    <div>
+                        <label>Gender:</label>
+                        <div id="gender">
+
+                            <input type="radio" name="gender" value="male" id="male" required><label for="male">Male</label>
+                            <input type="radio" name="gender" value="female" id="female"><label for="female">Female</label>
+                            <input type="radio" name="gender" value="other" id="other"><label for="other">Other</label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label>Country:</label>
+                        <div id="country">
+                            <select name="country" id="coutnrySelect" required>
+                                <option disabled selected value> -- select an option -- </option>
+                                <option value="India">India</option>
+                                <option value="USA">USA</option>
+                                <option value="Australia">Australia</option>
+                                <option value="Japan">Japan</option>
+                                <option value="Dubai">Dubai</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button class="btn">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+<script src="./js/gallery.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>

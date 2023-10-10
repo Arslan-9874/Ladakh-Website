@@ -1,0 +1,413 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar
+{
+    width: 0.7rem;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+.navbar
+{
+    position: sticky;
+    top: 0;
+    color: white;
+    background-color: black;
+    height: 7.7vh;
+    width: 100%;
+    z-index: 2;
+}
+#main_heading
+{
+    text-align: center;
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 1.3rem;
+    /* margin-left: 7%; */
+}
+.navbar ul
+{
+    list-style: none;    
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    height: 7.7vh;
+
+}
+.menu
+{
+    display: flex;
+    margin-left: 4.5rem;
+}
+
+.menu li
+{
+    margin: 5px 1rem;
+    padding: 5px;
+}
+
+.navbar ul li a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+
+}
+
+#regForm 
+{
+    border: 2px solid white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 1.05rem;
+    background-color: yellow;
+    color: black;
+
+}
+
+body::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: url("../img/main.jpg") center center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    z-index: -1;
+    filter: blur(4px);
+}
+.container
+{
+    height: 92.3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mainContainer
+{
+    font-size: 3.5rem;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+}
+.subContainer
+{
+    font-size: 2.5rem;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+}
+
+#serviceContainer
+{
+    background: url("../img/service_bg.jpg") center center no-repeat;
+    height: 70vh;
+    padding: 1px;
+}
+.serviceheading
+{
+    text-align: center;
+    padding: 2rem;
+    margin: 10px;
+    font-size: 1.8rem;
+
+}
+
+.serviceCards 
+{
+    display: flex;
+    justify-content: space-around;
+    height: 60%;
+}
+
+#bike001:hover
+{
+    transform: scale(1.15);
+    transition: all 1s ease;
+}
+#medical001:hover
+{
+    transform: scale(1.15);
+    transition: all 1s ease;
+}
+#guide001:hover
+{
+    transform: scale(1.15);
+    transition: all 1s ease;
+}
+
+.carddetails 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 0.8rem 0;
+    width: 28%;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+.carddetails h4 
+{
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 1rem;
+    border: 2px solid black;
+    margin: 0px 3rem;
+    border-radius: 50px;
+}
+
+.cardContent 
+{
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid black;
+}
+
+.cardImg 
+{
+    width: 100%;
+    margin-left: 0.5rem;
+}
+.cardImg img
+{
+    width: 100%;
+}
+
+.cardText
+{
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.0rem;
+}
+
+#servicebikeimg
+{
+    width: 100%;
+}
+
+#medicalCardImg 
+{
+    width: 100%;
+    margin: 1rem;
+    margin-right: 0;
+}
+
+#guideCardImg 
+{
+    width: 70%;
+    margin-left: 1rem;
+}
+
+/* Gallery Heading  */
+.galleryHeading 
+{
+    text-align: center;
+    font-size: 1.8rem;
+    position: absolute;
+    top: 180%;
+    left: 45.5%;
+}
+
+/* Gallery Slide */
+
+.slide {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	width: 100%;
+	height: 100vh;
+	overflow-x: hidden;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.slide1 {
+	background-image: url(
+    "../img/slide1.avif");
+    z-index: -1;
+}
+
+.slide2 {
+	background-image: url(
+    "../img/slide2.avif");
+    z-index: -1;
+}
+
+.slide3 {
+	background-image: url(
+    "../img/slide3.avif");
+    z-index: -1;
+}
+
+.slide4 
+{
+    background-image: url("../img/slide4.avif");
+    z-index: -1;
+}
+
+.arrow {
+	cursor: pointer;
+	position: absolute;
+	top: 227.5%;
+	margin-top: -35px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+}
+
+#arrow-left {
+	border-width: 20px 30px 20px 0;
+	border-color: transparent #fff transparent transparent;
+	left: 0;
+	margin-left: 20px;
+}
+
+#arrow-right {
+	border-width: 20px 0 20px 30px;
+	border-color: transparent transparent transparent #fff;
+	right: 0;
+	margin-right: 20px;
+}
+
+/* Contact*/
+
+#contactContainer 
+{
+    background-image: url('../img/contactbg.avif');
+    height: 50vh;
+}
+
+.contactheading 
+{
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 2rem;
+}
+
+.contactDetails 
+{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 2rem;
+}
+
+.contactDetails p
+{
+    font-size: 1.4rem;
+}
+
+.contactDetails p span 
+{
+    font-weight: 1000;
+}
+
+#contactImg 
+{
+    height: 40%;
+    position: absolute;
+    top: 278%;
+    right: 4%;
+}
+
+/* Registration form */
+
+.formCard 
+{
+    height: 70vh;
+    border: 2px solid black;
+    width: 50%;
+    margin: 4rem auto;
+    border-radius: 25px;
+    background-color: rgba(135, 207, 235, 0.4)
+}
+
+.regHeading 
+{
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+.regDetails
+{
+    height: 72%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5rem 3rem;
+    padding-bottom: 0rem;
+
+}
+
+.regDetails div 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.regDetails div label 
+{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.regDetails div input, select
+{
+    width: 56%;
+    border-radius: 10px;
+    padding: 0.5rem;
+}
+
+#gender
+{
+    font-size: 1.2 rem;
+    padding-left: 5rem;
+}
+#gender label 
+{
+    font-size: 1rem;
+}
+
+#country
+{
+    padding-left: 5rem;
+}
+
+.regDetails div select
+{
+    width: 100%;
+}
+
+.btn 
+{
+    width: 100%;
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    margin-top: 2rem;
+    border-radius: 20px;
+}
